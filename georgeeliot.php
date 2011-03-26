@@ -102,8 +102,9 @@ requests (<a href="mailto:mnoble@princeton.edu">email</a>).
 <tr></tr>
 <tbody>
 
+<tr><td>January 1851</td><td><a href="eliot-texts/Eliot_Mackey_Progress.html">"The Progress of the Intellect"</a></td><td><i>The Westminster Review</i> Vol. 54 old series (Jan 1851): 353-68.</td></tr>
 
-<tr><td>Jan 1851</td><td><a href="eliot-texts/Eliot_Mackey_Progress.html">"The Progress of the Intellect"</a></td><td><i>The Westminster Review</i> Vol. 54 old series (Jan 1851): 353-68.</td></tr>
+<tr><td>January 1852</td><td><a href="eliot-texts/Eliot_Carlyle_Sterling.html">"Carlyle's Life of Sterling"</a></td><td><i>The Westminster Review</i> Vol. 62 old series (Jan 1852): 247-49.</td></tr>
 
 <tr><td>October 1854</td><td><a href="eliot-texts/Eliot_Woman_in_France.html">"Woman In France: Madame De Sabl&eacute;"</a></td><td><i>The Westminster Review</i> Vol. 62 old series, Vol. 6, No. 2 new series (Oct 1854): 448-72.</td></tr>
 
