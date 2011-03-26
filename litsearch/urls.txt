@@ -1,0 +1,3 @@
+1895 The_Time_Machine http://www.gutenberg.org/files/35/35.txt
+1897 The_Invisible_Man http://www.gutenberg.org/files/5230/5230.txt
+1898 The_War_of_the_Worlds http://www.gutenberg.org/files/36/36.txt

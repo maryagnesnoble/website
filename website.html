@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>(setq org-publish-use-timestamps-flag nil)</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2008-12-09 15:19:10 EST"/>
+<meta name="author" content="Dan"/>
+<style type="text/css">
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color:lightblue; font-weight:normal }
+  .target { }
+  .timestamp { color: grey }
+  .timestamp-kwd { color: CadetBlue }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+
+</style><link rel=stylesheet
+                       href="style.css"
+                         type="text/css">
+</head><body>
+<h1 class="title">(setq org-publish-use-timestamps-flag nil)</h1>
+
+<p>(setq org-publish-project-alist 
+'(
+;; General website components
+</p>
+<p>
+("website-org"
+<pre class="example">
+base-directory "~/website"
+base-extension "org"
+publishing-directory "~/pub_html"
+publishing-function org-publish-org-to-html
+completion-function (lambda() (rename-files-html-to-php '("~/pub_html/index")))
+headline-levels 3
+section-numbers nil
+table-of-contents nil
+style "&lt;link rel=stylesheet
+</pre>
+href=\"style.css\"
+type=\"text/css\"&gt;"
+<pre class="example">
+auto-preamble t
+auto-postamble nil
+recursive t)
+</pre>
+</p>
+<p>
+("website-images"
+<pre class="example">
+base-directory "~/website"
+base-extension "jpg\\|gif\\|png"
+publishing-directory "~/pub_html"
+publishing-function org-publish-attachment)
+</pre>
+</p>
+<p>
+("website-etc"
+<pre class="example">
+base-directory "~/website"
+base-extension "css"
+publishing-directory "~/pub_html"
+publishing-function org-publish-attachment
+recursive t)
+</pre>
+</p>
+<p>
+("software"
+<pre class="example">
+base-directory "~/website/software"
+base-extension "."
+publishing-directory "~/pub_html/software"
+publishing-function org-publish-attachment
+completion-function (lambda() (rename-files-html-to-php '("~/pub_html/software"))))
+</pre>
+</p>
+<p>
+;; plants
+</p>
+<p>
+("floras"
+<pre class="example">
+base-directory "~/plants/floras"
+base-extension "org"
+publishing-directory "~/pub_html/plants/floras"
+publishing-function org-publish-org-to-html
+preparation-function
+</pre>
+(lambda () (plants-floras-preparation-function "~/plants/all.flora.org"
+'(("all" . nil)
+("romania" . "Romania<sub>1|Romania</sub><sub>2|Romania</sub><sub>3|Romania</sub><sub>4|Romania</sub><sub>5</sub>")
+("garden" . "garden"))
+"~/plants/floras"))
+;; :completion-function plants-floras-completion-function
+<pre class="example">
+completion-function (lambda() (rename-files-html-to-php '("~/pub_html/plants/floras/index")))
+headline-levels 1
+section-numbers nil
+table-of-contents nil
+style "&lt;link rel=stylesheet
+</pre>
+href=\"../plants.css\"
+type=\"text/css\"&gt;"
+<pre class="example">
+auto-preamble nil
+auto-postamble nil)
+</pre>
+</p>
+<p>
+("plants-taxon-pages-org"
+<pre class="example">
+base-directory "~/plants/floras/taxon-pages"
+base-extension "org"
+publishing-directory "~/pub_html/plants/floras/taxon-pages"
+publishing-function org-publish-org-to-html
+preparation-function plants-taxon-pages-preparation-function
+completion-function plants-taxon-pages-completion-function
+headline-levels 3
+section-numbers nil
+table-of-contents nil
+style "&lt;link rel=stylesheet
+</pre>
+href=\"plants.css\"
+type=\"text/css\"&gt;"
+<pre class="example">
+auto-preamble t
+auto-postamble nil)
+</pre>
+</p>
+<p>
+("plants-etc"
+<pre class="example">
+base-directory "~/plants"
+base-extension "css\\|html"
+publishing-directory "~/pub_html/plants"
+publishing-function org-publish-attachment)
+</pre>
+</p>
+
+<p>
+("plants-floras-etc"
+<pre class="example">
+base-directory "~/plants/floras"
+base-extension "css\\|html"
+publishing-directory "~/pub_html/plants/floras"
+publishing-function org-publish-attachment)
+</pre>
+</p>
+<p>
+;;      ("plants-lores"
+;;       :base-directory "~/plants/lores"
+;;       :base-extension "jpg\\|gif\\|png"
+;;       :publishing-directory "~/pub<sub>html</sub>/plants/lores"
+;;       :publishing-function org-publish-attachment)
+</p>
+<p>
+;;      ("plants-hires"
+;;       :base-directory "~/plants/hires"
+;;       :base-extension "jpg\\|gif\\|png"
+;;       :publishing-directory "~/pub<sub>html</sub>/plants/hires"
+;;       :publishing-function org-publish-attachment)
+</p>
+
+<p>
+;; ("plants" :components ("plants-org" "plants-taxon-pages-org" "plants-etc"))
+</p>
+<p>
+("litsearch-org"
+<pre class="example">
+base-directory "~/website/mary/litsearch"
+publishing-directory "~/pub_html-mary/litsearch"
+base-extension "org"
+publishing-function org-publish-org-to-html
+completion-function (lambda() (rename-files-html-to-php '("~/pub_html-mary/litsearch/form" "~/pub_html-mary/litsearch/results-proximity" "~/pub_html-mary/litsearch/results-advanced" "~/pub_html-mary/litsearch/results-random")))
+headline-levels 3
+section-numbers nil
+table-of-contents nil
+style "&lt;link rel=stylesheet
+</pre>
+href=\"style.css\"
+type=\"text/css\"&gt;"
+<pre class="example">
+auto-preamble t
+auto-postamble nil)
+</pre>
+</p>
+<p>
+("litsearch-etc"
+<pre class="example">
+base-directory "~/website/mary/litsearch"
+base-extension "txt\\|php\\|pl\\|css\\|sh\\|py"
+publishing-directory "~/pub_html-mary/litsearch"
+publishing-function org-publish-attachment)
+</pre>
+</p>
+<p>
+("mary-org"
+<pre class="example">
+base-directory "~/website/mary"
+base-extension "org\\|txt"
+publishing-directory "~/pub_html-mary"
+publishing-function org-publish-org-to-html
+</pre>
+;; :completion-function (lambda() 
+;;                              (rename-files-html-to-php '("~/pub<sub>html</sub>-mary/index" "~/pub<sub>html</sub>-mary/georgeeliot" ))
+;;                              (copy-file "~/pub<sub>html</sub>-mary/index.html.bak" "~/pub<sub>html</sub>-mary/index.html"))
+<pre class="example">
+headline-levels 3
+section-numbers nil
+table-of-contents nil
+style "&lt;link rel=stylesheet
+</pre>
+href=\"style.css\"
+type=\"text/css\"&gt;"
+<pre class="example">
+auto-preamble t
+auto-postamble nil
+recursive t)
+</pre>
+</p>
+<p>
+("mary-etc"
+<pre class="example">
+base-directory "~/website/mary"
+base-extension "css\\|jpg\\|jpeg\\|gif\\|html\\|org"
+publishing-directory "~/pub_html-mary"
+publishing-function org-publish-attachment
+recursive t)
+</pre>
+</p>
+<p>
+("litsearch" :components ("litsearch-org" "litsearch-etc"))
+("mary-website" :components ("mary-org" "mary-etc"))
+("plants" :components ("floras" "plants-etc" "plants-floras-etc")) ;; "plants-taxon-pages-org"
+("website" :components ("website-org" "website-images" "website-etc" "software" "litsearch-etc" "litsearch-org"))))
+</p>
+
+<p>
+(defun rename-files-html-to-php (files)
+(let (html)
+(while (setq file (pop files))
+(setq html (concat file ".html"))
+(when (file-exists-p html) (rename-file html (concat file ".php") t)))))
+</p>
+<p>
+(load "~/src/plants/plants.el")
+</p>
+<p>
+(defun plants-taxon-pages-preparation-function ()
+(shell-command "sed -i 's/jpg/gif/' ~/pub<sub>html</sub>/plants/floras/taxon-pages/*.html"))
+</p>
+<p>
+(defun plants-taxon-pages-completion-function ()
+(shell-command "sed -i 's/jpg/gif/' ~/pub<sub>html</sub>/plants/floras/taxon-pages/*.html"))
+</p>
+<p>
+(defun plants-insert-preamble (flora)
+"Insert title and links to different views at top of org file"
+(beginning-of-buffer)
+(insert (concat "#+title: Dan's plant photos:" flora "\n"))
+(insert (concat "<a href="" flora "-full-view.flora.html">full view</a>\n"))
+(insert (concat "<a href="" flora "-family-view.flora.html">family view</a>\n"))
+(insert (concat "<a href="" flora "-tree-view.flora.html">tree view</a>\n")))
+</p>
+<p>
+(defun plants-floras-preparation-function (master-flora-file floras-tags-alist output-dir)
+"Create sub-floras from the `master-flora-file', and for each sub-flora create the different views.
+Specifically, `floras-tags-alist' contains a list of the
+requested sub-floras, together with the strings necessary to
+generate them via a tags sparse tree operation. Once the
+sub-flora is generated, 3 org files are written into `output-dir'
+corresponding to the 3 'views': 'full view' (unaltered), family
+view (subterminal nodes receive a single photo from each leaf,
+and the leaves are then deleted), and 'tree view' (The tree is
+rendered directly into a tree diagram in html (not by org-mode);
+each node in that diagram is a hyperlink to a page containing a
+single representative photo from each descendent leaf of that
+node. Thus clicking on sucessively more inclusive nodes reveals
+successively more phylogenetically diverse collections of
+images.) "
+(let (el flora tag buffer-copy)
+(while (setq el (pop floras-tags-alist))
+(setq flora (car el)) ; I don't know if an alist is the appropriate list type,
+(setq tag (cdr el)) ; and even if it is, this may well not be the best way to process them.
+(with-temp-buffer
+(insert-file-contents master-flora-file)
+(when tag
+(org-tags-sparse-tree nil tag)
+(outline-delete-invisible))
+(setq buffer-copy (buffer-string))
+;; create full view org file
+(with-temp-buffer
+(insert buffer-copy)
+(plants-insert-preamble flora)
+(write-file (concat output-dir "/" flora "-full-view.flora.org")))
+;; create family view org file
+(with-temp-buffer
+(insert buffer-copy)
+(plants-make-subterminal-taxa-view)
+(plants-insert-preamble flora)
+(write-file (concat output-dir "/" flora "-family-view.flora.org")))
+;; create tree view org file
+(with-temp-buffer
+(insert buffer-copy)
+(org-mode) ;; otherwise org-complex-heading-regexp is undefined in org-export-parse; probably I'm doing something suboptimally
+;;      (plants-insert-preamble flora) how to do this nicely when tree view is created directly in html?
+(org-export-as-html-tree-view)
+;;      (replace-regexp "href=\".*/\([^/]+\)/\"" "href=\"taxon-pages/\1.html\"" nil (point-min) (point-max))
+;;      (while (re-search-forward "href=\".*/\([^/]+\)/\"") (replace-match  "href=\"taxon-pages/\1.html\""))
+(write-file (concat output-dir "/" flora "-tree-view.flora.html")))))))
+</p>
+
+</div>
+</body>
+</html>

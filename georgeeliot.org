@@ -1,0 +1,62 @@
+#+TITLE: George Eliot Archive
+#+OPTIONS: toc:nil num:nil author:nil creator:nil timestamp:nil
+#+STARTUP: showall
+
+
+My aim is to create a fairly comprehensive online archive of George
+Eliot's novels, essays, reviews, letters and other writings. I will
+soon add a search tool, and I'll add more Eliot materials whenever I
+get a chance. I'd welcome suggestions and requests - please contact me
+at mnoble at princeton.edu
+
+* Searchable full texts by George Eliot
+|                    |                                      |                                                                                                 |
+|--------------------+--------------------------------------+-------------------------------------------------------------------------------------------------|
+| June 1855          | [[file:eliot-texts/eliot-threemonthsinweimar.html]['Three Months in Weimar']]             | Fraser's Magazine for Town and Country, 51: 306 (1855:June), pp. 699-706.                       |
+| July 1856          | [[file:eliot-texts/eliot-naturalhistoryofgermanlife.html]['The Natural History of German Life']] | The Westminster Review Vol 66 (old series), Vol. 10 (new series), (July 1856), pp. 51-79.       |
+| October 1856       | [[file:eliot-texts/eliot-sillynovels.html]['Silly Novels by Lady Novelists']]     | The Westminster Review Vol. 66 (old series), Vol. 10 (new series), (October 1856), pp. 442-461. |
+| May 1865           | [[file:eliot-texts/eliot-rationalism.html]['The Influence of Rationalism']]       | Fortnightly Review Vol. 1, (May 1865), pp. 43-55.                                               |
+| 1857               | [[file:eliot-texts/scenes.html][Scenes of Clerical Life]]              | Serialized in Blackwood's Edinburgh Magazine, 1857; published in 2 vols, Blackwood, 1858.       |
+| Feb 1859           | [[file:eliot-texts/adambede.html][Adam Bede]]                            | 3 vols, Edinburgh and London: William Blackwood & Sons.                                         |
+| July 1859          | [[file:eliot-texts/liftedveil.html][The Lifted Veil]]                      | Blackwood's Edinburgh Magazine.                                                                 |
+| April 1860         | [[file:eliot-texts/mill.html][The Mill on the Floss]]                | 3 vols, Blackwood.                                                                              |
+| April 1861         | [[file:eliot-texts/silas.html][Silas Marner]]                         | Blackwood.                                                                                      |
+| July 1862 - Aug 63 | [[file:eliot-texts/romola.html][Romola]]                               | Serialized in Cornhill Magazine; published in 3 vols, Smith, Elder and Co., 1863.               |
+| July 1864          | [[file:eliot-texts/brotherjacob.html][Brother Jacob]]                        | Cornhill Magazine.                                                                              |
+| June 1866          | [[file:eliot-texts/felix.html][Felix Holt]]                           | Blackwood.                                                                                      |
+| 1869               | [[file:eliot-texts/lisa.html][How Lisa Loved the King]]              |                                                                                                 |
+| 1871-2             | [[file:eliot-texts/middlemarch.html][Middlemarch]]                          | Serialized in Blackwood's Edinburgh Magazine; published in 3 vols, Blackwood, Dec 1872.         |
+| Feb - Sept 1876    | [[file:eliot-texts/deronda.html][Daniel Deronda]]                       | Serialized in Blackwood's Edinburgh Magazine; published in 3 vols, Blackwood, Sept 1876.        |
+| 1879               | [[file:eliot-texts/theophrastus.html][The Impressions of Theophrastus Such]] | Blackwood.                                                                                      |
+|                    |                                      |                                                                                                 |
+ 
+
+## Dear Mary, note that you can insert a single line of literal HTML as follows:
+#+html: <br>
+## you can also do it like you've done further down the page, but remember the underscores (you had ommitted them). Case doesn't matter (I find the caps a bit ugly).
+
+The texts of Eliot's novels are from Project Gutenburg. The essays,
+reviews &c. are photocopied (from the journals in which they were
+originally published), scanned, and turned into text with OCR software
+plus a good deal of human editing.
+
+#+BEGIN_HTML
+<br>
+#+END_HTML
+
+
+* [[http://webscript.princeton.edu/~mnoble/litsearch/form.php][Text Search Tool]] (allows you to find two or more search terms in proximity to each other. Can be used with any text.)
+
+* Recommended 19C research websites
+
+** [[http://darwin-online.org.uk/][The Complete Works of Charles Darwin Online]]
+** [[http://www.darwinproject.ac.uk/content/view/15/108/][The Darwin Correspondence Project]]
+** [[http://pages.ripco.net/~mws/etexts.html][Thomas Hardy e-texts (including most novels, poems and some essays)]]
+** [[http://www.library.utoronto.ca/fisher/hardy/intro.html][Thomas Hardy's Max Gate Library Catalogue]]
+** [[http://www.walterscott.lib.ed.ac.uk/home.html][The Walter Scott Digital Archive]]
+** [[http://www.wku.edu/~smithch/index1.htm][The Alfred Russel Wallace Page]]
+** [[http://www.open.ac.uk/Arts/reading/][The Reading Experience Database 1450-1945]] 
+
+#+html: <?php $visitorlog_file = "georgeeliot.visitors" ; $visitorlog_mailto = array(mary => "mnoble@princeton.edu") ;
+#+include: ~/src/common/visitorlog.php html
+#+html: ?>

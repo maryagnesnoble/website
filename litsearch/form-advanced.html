@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Online literature search engine</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2008-12-09 15:19:10 EST"/>
+<meta name="author" content="Dan"/>
+<style type="text/css">
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color:lightblue; font-weight:normal }
+  .target { }
+  .timestamp { color: grey }
+  .timestamp-kwd { color: CadetBlue }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+
+</style><link rel=stylesheet
+                       href="style.css"
+                         type="text/css">
+</head><body>
+
+<center><h2>     <a href="georgeeliot.php">George Eliot Archive</a>   |   <a href="litsearch/form.php">Proximity Search Tool</a>   |   <a href="Woolf.php">Virginia Woolf Class</a>   |   <a href="MNoble_CV_2010.pdf">CV</a>   |   <a href="index.php">Home</a>     </h2></center>
+</ul>
+</menu>
+
+<br>
+
+<h1 class="title">Online literature search engine</h1>
+
+<p>Please note that we are currently working on these pages. If they're
+not working properly, do contact us at either [mnoble at
+princeton dot edu] or [davison at stats ox ac uk].
+</p>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1">Advanced search</h2>
+<div id="text-1">
+
+<p>Regular expressions are a formal way of specifying patterns of
+text. The other searches work by building a regular expression
+corresponding to the search terms. Here you can enter a regular
+expression directly. There are lots of regular expression tutorials
+on the internet.
+  <form action="results.php" method="post">
+  <p>URL: <input type="text" name="url" /></p>
+  <p>Regular expression: <input type="text" name="regex" /></p>
+  <p><input type="submit" /></p>
+  </form>
+
+</p>
+</div>
+
+<br>
+<div id="outline-container-1.1" class="outline-3">
+<b id="sec-1.1">Some regular expression examples</b>
+<div id="text-1.1">
+
+
+</div>
+
+<div id="outline-container-1.1.1" class="outline-4">
+<p id="sec-1.1.1">Find all lines in which the word 'beak' occurs, followed by unspecified other words, and then the word 'finch'.</p>
+<div id="text-1.1.1">
+
+<p><pre class="example">
+ beak.*finch
+</pre>
+<u>Explanation</u>
+'.' is a wildcard that matches any character; '*' means
+'repeated any number of times'. So this pattern says "search for the
+word 'beak', followed by any number of unspecified characters, before
+the word 'finch'".
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

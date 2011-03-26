@@ -1,0 +1,16 @@
+June_1855 Three_Months_in_Weimar ../eliot-texts/eliot-threemonthsinweimar.txt
+July_1856 The_Natural_History_of_German_Life ../eliot-texts/eliot-naturalhistoryofgermanlife.txt
+October_1856 Silly_Novels_by_Lady_Novelists ../eliot-texts/eliot-sillynovels.txt
+May_1865 The_Influence_of_Rationalism ../eliot-texts/eliot-rationalism.txt
+1857 Scenes_of_Clerical_Life ../eliot-texts/scenes.txt
+Feb_1859 Adam_Bede ../eliot-texts/adambede.txt
+July_1859 The_Lifted_Veil ../eliot-texts/liftedveil.txt
+April_1860 The_Mill_on_the_Floss ../eliot-texts/mill.txt
+April_1861        Silas_Marner ../eliot-texts/silas.txt
+July_1862_-_Aug_63 Romola ../eliot-texts/romola.txt
+July_1864         Brother_Jacob ../eliot-texts/brotherjacob.txt
+June_1866         Felix_Holt ../eliot-texts/felix.txt
+1869              How_Lisa_Loved_the_King ../eliot-texts/lisa.txt
+1871-2            Middlemarch ../eliot-texts/middlemarch.txt
+Feb_-_Sept_1876   Daniel_Deronda ../eliot-texts/deronda.txt
+1879              The_Impressions_of_Theophrastus_Such ../eliot-texts/theophrastus.txt

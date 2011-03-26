@@ -1,0 +1,111 @@
+body {
+	margin: 0px;
+	font-family: Verdana, Sans-Serif, Arial, Helvetica;
+	font-size: 10px;
+	color: #242424;
+	line-height: 18px;
+	padding: 0px;
+	width: 480px;
+	background-color: #ffffff;
+}
+
+body.newwindow {
+	margin: 20px;
+}
+
+b {
+	color: #464646;
+}
+
+p {
+	line-height: 18px;
+}
+
+p.underline {
+	text-decoration: underline;
+	padding-top: 5px;
+}
+
+p.indenttop {
+	padding-top: 15px;
+}
+p.indent {
+	text-indent: 25px;
+}
+p.title {
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+p.heading {
+	font-weight: bold;
+}
+p.subheading {
+	font-weight: bold;
+	padding-top: 10px;
+}
+p.blockquote {
+	font-size: 9px;
+	line-height: 15px;
+	padding-left: 25px;
+}
+p.brindent {
+	margin-top: -8px;
+	line-height: 15px;
+	padding-left: 25px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 10px;
+	font-weight: bold;
+	color: #900;
+}
+
+a:hover {
+	color: #ff9900;
+}
+
+
+/* NAV (LEFT FRAME) */
+table.nav td {
+	font-weight: normal;
+	text-align: left;
+	padding: 0px;
+	line-height: 25px;
+	border: none;
+}
+
+table.nav a {
+	font-family: Verdana, Sans-Serif, Arial, Helvetica;
+	letter-spacing: 6px;
+	font-weight: normal;
+	font-size: 10px;
+	text-decoration: none;
+	color: #242424;
+}
+
+table.nav a:hover {
+	font-weight: bold;
+}
+
+/* BANNER (TOP FRAME) */
+img.embedded {
+	margin-right: 40px;
+	vertical-align: top;
+	float: left;
+}
+
+.bannertitle {
+	font-family: Verdana, Sans-Serif, Arial, Helvetica;
+	letter-spacing: 10px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #242424;
+	padding-top: 20px;
+}
+
+/* FOR PAST GIGS ON THE UPCOMING PAGE */
+div.gone { color: #686868 }
+.gone a { color:#cc4444 }
+.gone a:hover { color:#ff9900 }
+.gone b { color: #8a8a8a }

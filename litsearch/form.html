@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Literature search engine</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2008-12-09 15:19:10 EST"/>
+<meta name="author" content="Dan"/>
+<style type="text/css">
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color:lightblue; font-weight:normal }
+  .target { }
+  .timestamp { color: grey }
+  .timestamp-kwd { color: CadetBlue }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+
+</style><link rel=stylesheet
+                       href="style.css"
+                         type="text/css">
+</head><body>
+<h1 class="title">Literature search engine</h1>
+
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1">Proximity search</h2>
+<div id="text-1">
+
+<p>This search will find paragraphs in which all of your search terms
+occur. You can enter as many search terms as you like, and you can
+specify how close together those words must be in the paragraph.
+  <form action="results-proximity.php" method="post">
+  <Input type = 'Radio' name='search' value='misc'>Misc 19th C
+  <Input type = 'Radio' name='search' value='eliot'>George Eliot search
+  <Input type = 'Radio' name='search' value='url'>URL search
+  <p>URL: <input type="text" name="url" /></p>
+  <p>Enter search terms separated by spaces: <input type="text" name="words" /></p>
+  <p>Enter maximum number of words separating them: <input type="text" name="proximity" /></p>
+  <p><input type="submit" /></p>
+  </form>
+
+</p></div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2">Instructions</h2>
+<div id="text-2">
+
+<p>You can search in any text that you can find online. Once you've
+located an online text, paste its address into the 'URL' box. For
+example, to search in a text from Project Gutenberg, use the <a href="http:www.gutenberg.org">Gutenberg website</a> to find the URL of their plain text version and paste it into
+the box. So, to search in The Adventures of Sherlock Holmes, you would
+enter <a href="http://www.gutenberg.org/dirs/etext99/advsh12.txt">http://www.gutenberg.org/dirs/etext99/advsh12.txt</a> in the URL
+box. The link must be to a webpage or a plain text file; Microsoft Word or
+pdf files will not work.
+</p>
+<p>
+Please note that we are currently working on these pages. If they're
+not working properly, do contact us at either [mnoble at
+princeton dot edu] or [davison at stats dot ox dot ac dot uk].
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3">Some Project Gutenberg URLs</h2>
+<div id="text-3">
+
+
+<p>
+King James Bible <a href="http://www.gutenberg.org/dirs/etext90/kjv10.txt">http://www.gutenberg.org/dirs/etext90/kjv10.txt</a>
+</p>
+<p>
+The Adventures of Sherlock Holmes, by Arthur Conan Doyle <a href="http://www.gutenberg.org/dirs/etext99/advsh12.txt">http://www.gutenberg.org/dirs/etext99/advsh12.txt</a>
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><a href="form-advanced.html">Advanced search</a></h2>
+<div id="text-4">
+
+
+
+
+<?php $visitorlog_file = "form.visitors" ; $visitorlog_mailto = array(dan => "davison@stats.ox.ac.uk", mary => "mnoble@princeton.edu") ;
+<p>
+// Insert this code into web page to log all visitors (excluding certain search engines and other specified IPs to ignore)
+// The following variables must be defined:
+//     $visitorlog<sub>mailto</sub> (array of email addresses for notification of genuine hits)
+//     $visitorlog<sub>msg</sub> (string to add to email message)
+//     $visitorlog<sub>file</sub> (name of log file)
+</p>
+
+<p>
+// 74.6.17.190 llf520160.crawl.yahoo.net
+// 67.195.37.125 llf320013.crawl.yahoo.net
+// 65.214.45.136 crawler4027.ask.com
+// 66.249.65.196 crawl-66-249-65-196.googlebot.com
+// 65.55.104.208 msnbot-65-55-104-208.search.msn.com
+// 208.111.154.15 crawl1.nat.svl.searchme.com
+$ignore<sub>hosts</sub> = array("yahoo" =&gt; "crawl\.yahoo\.",
+"ask" =&gt; "crawler.*\.ask\.",
+"google" =&gt; "crawl.*\.googlebot\.",
+"msn" =&gt; "msnbot.*\.search\.msn\.",
+"searchme" =&gt; "\.searchme\.",
+"googlebox" =&gt; "googlebox\.",
+"me" =&gt; "mnoble-dan") ;
+$ignore<sub>ips</sub> = array(butler<sub>dan</sub> =&gt; "140.180.130.83",
+haywards<sub>cottage</sub> =&gt; "80.89.87.192") ;
+</p>
+<p>
+$ip=$<sub>SERVER['REMOTE</sub><sub>ADDR']</sub> ;
+$host = gethostbyaddr($ip) ;
+$currenturl = $<sub>SERVER[</sub>"HTTP<sub>HOST</sub>"] . $<sub>SERVER[</sub>"REQUEST<sub>URI</sub>"] ; 
+</p>
+<p>
+$genuine = true ;
+foreach($ignore<sub>hosts</sub> as $regex) {
+if(ereg($regex, $host)) { $genuine = false ; }
+}
+foreach($ignore<sub>ips</sub> as $ignore<sub>ip</sub>) {
+if($ip == $ignore<sub>ip</sub>) { $genuine = false ; }
+}
+echo "&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;" ;
+// $visitorlog<sub>num</sub> = system("wc -l &lt;".$visitorlog<sub>file</sub>." 2&gt; <i>dev/null") ; /</i> passthru("wc -l &lt;".$visitorlog<sub>file</sub>." 2&gt; /dev/null", &amp;$visitorlog<sub>num</sub>) ; both these alternatives seem to echo the output as well as return it.
+if(! $visitorlog<sub>num</sub>) { $visitorlog<sub>num</sub> = 0 ; }
+if( $genuine ) {
+$visitorlog<sub>num</sub> = $visitorlog<sub>num</sub> + 1 ;
+$time = date("Y-m-d-H:i") ;
+$msg = "Well done! On " . $time . " someone with IP address " . $ip . " visited " . $currenturl . ". That IP address comes up as " . $host . "\nNumber of visitors so far is " . $visitorlog<sub>num</sub> ;
+$msg = $msg . "\n" . $visitorlog<sub>msg</sub> ;
+foreach($visitorlog<sub>mailto</sub> as $addr) { mail($addr,"website hit!", $msg) ; }
+// $fh = fopen($visitorlog<sub>file</sub>, "a") ;
+// fwrite($fh, $time." ".$ip." ".$host."\n") ;
+// fclose($fh) ;
+}
+// echo "visitor number ".$visitorlog<sub>num</sub>."&lt;br&gt;" ;
+</p>
+
+
+?>
+</div>
+</div>
+</body>
+</html>
