@@ -102,13 +102,15 @@ requests (<a href="mailto:mnoble@princeton.edu">email</a>).
 <tr></tr>
 <tbody>
 
-<tr><td>January 1851</td><td><a href="eliot-texts/Eliot_Mackey_Progress.html">"The Progress of the Intellect"</a></td><td><i>The Westminster Review</i> Vol. 54 old series (Jan 1851): 353-68.</td></tr>
+<tr><td WIDTH="12%">January 1851</td><td WIDTH="50%"><a href="eliot-texts/Eliot_Mackey_Progress.html">"The Progress of the Intellect"</a></td><td WIDTH="38%"><i>The Westminster Review</i> Vol. 54 old series (Jan 1851): 353-68.</td></tr>
 
 <tr><td>January 1852</td><td><a href="eliot-texts/Eliot_Carlyle_Sterling.html">"Carlyle's Life of Sterling"</a></td><td><i>The Westminster Review</i> Vol. 62 old series (Jan 1852): 247-49.</td></tr>
 
-<tr><td>October 1854</td><td><a href="eliot-texts/Eliot_Woman_in_France.html">"Woman In France: Madame De Sabl&eacute;"</a></td><td><i>The Westminster Review</i> Vol. 62 old series, Vol. 6, No. 2 new series (Oct 1854): 448-72.</td></tr>
+<tr><td>October 1854</td><td><a href="eliot-texts/Eliot_Woman_in_France.html">"Woman In France: Madame De Sabl&eacute;"</a></td><td><i>The Westminster Review</i> Vol. 62 old series, Vol. 6 new series (Oct 1854): 448-72.</td></tr>
 
 <tr><td>June 1855</td><td><a href="eliot-texts/eliot-threemonthsinweimar.html">"Three Months in Weimar"</a></td><td><i>Fraser's Magazine for Town and Country</i> 51: 306 (June 1855): 699-706.</td></tr>
+
+<tr><td>July 1855</td><td><a href="eliot-texts/Eliot_Reviews_Kingsley_Jewsbury_Menander_etc.html">"Belles Lettres" and "Art"</a> (reviews of fiction, poetry, criticism, and books on visual art, inc. extended reviews of Kingsley's <i>Westward Ho!</i>, Jewsbury's <i>Constance Herbert</i>, Arnold's <i>Poems</i>, and monographs on Menander, Louis David, and Velazquez)</td><td><i>The Westminster Review</i> Vol. 64 old series, Vol. 7 new series (July 1855): 151-166.</td></tr>
 
 <tr><td>October 1855</td><td><a href="eliot-texts/Eliot_Evangelical_Dr_Cumming.html">"Evangelical Teaching: Dr. Cumming"</a></td><td><i>The Westminster Review</i> Vol. 8 new series (Oct 1855): 436-462.</td></tr>
 
