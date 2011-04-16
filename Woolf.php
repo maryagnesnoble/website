@@ -75,6 +75,19 @@ lang="en" xml:lang="en">
 	 href="style.css"
 	 type="text/css">
 </head><body>
+
+
+<menu>
+
+<DIV ALIGN=CENTER>
+<h2>     <a href="index.php">Home</a>   |   <a href="georgeeliot.php">George Eliot Archive</a>   |   <a href="litsearch/form.php">Proximity Search Tool</a>   |  <a href="MNoble_CV_2010.pdf">CV</a>    </h2>
+</DIV>
+
+</ul>
+</menu>
+
+<p>
+
 <h1 class="title">Virginia woolf</h1>
 <p class="title"><img src="untitled.jpg" width="119" height="164" /></p>
 <p><strong><span class="title">ARLET 321 002: </span>Studies in British Literature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </strong><br />

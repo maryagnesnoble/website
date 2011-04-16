@@ -135,7 +135,7 @@ Jennifer Breen and Mary Noble, <a href="http://www.amazon.com/Romantic-Literatur
 
 <td>
 
-<img height="220" width="160" src="Mary2.JPG"/></p>
+<img height="160" width="160" src="Mary2.JPG"/></p>
 
 
 

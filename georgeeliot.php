@@ -122,6 +122,8 @@ requests (<a href="mailto:mnoble@princeton.edu">email</a>).
 
 <tr><td>October 1856</td><td><a href="eliot-texts/eliot-sillynovels.html">"Silly Novels by Lady Novelists"</a></td><td><i>The Westminster Review</i> Vol. 66 old series, Vol. 10 new series (Oct 1856): 442-461.</td></tr>
 
+<tr><td>October 1856</td><td><a href="eliot-texts/Eliot_Reviews_Stowe_Reade.html">"Belles Lettres"</a> (reviews of fiction, poetry, and criticism, inc. extended discussion of Stowe's <i>Dred</i> and Reade's <i>It is Never too Late to Mend</i>)</td><td><i>The Westminster Review</i> Vol. 66 old series, Vol. 10 new series (Oct 1856): 311-19.</td></tr>
+
 <tr><td>January 1857</td><td><a href="eliot-texts/Eliot_Worldliness_Young.html">"Worldliness and Other-Worldliness: The Poet Young"</a></td><td><i>The Westminster Review</i> Vol. 11 new series (Jan 1857): 1-41.</td></tr>
 
 <tr><td>May 1865</td><td><a href="eliot-texts/eliot-rationalism.html">"The Influence of Rationalism"</a></td><td><i>The Fortnightly Review</i> Vol. 1 (May 1865): 43-55.</td></tr>
