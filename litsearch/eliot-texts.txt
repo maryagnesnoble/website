@@ -12,7 +12,7 @@ October_1856 Silly_Novels_by_Lady_Novelists ../eliot-texts/eliot-sillynovels.txt
 October_1856 Belles_Lettres_(inc._reviews_of_Stowe's_Dred_and_Reade's_It_is_Never_Too_Late_to_Mend) ../eliot-texts/Eliot_Reviews_Stowe_Reade.txt 
 May_1865 The_Influence_of_Rationalism ../eliot-texts/eliot-rationalism.txt
 May_1865 The_Grammar_of_Ornament ../eliot-texts/Eliot_Grammar_Ornament.txt
-May_1865 Address_to_Working_Men,_by_Felix_Holt ../eliot-texts/Eliot_Holt_AddressToWorkingMen.html 
+May_1865 Address_to_Working_Men,_by_Felix_Holt ../eliot-texts/Eliot_Holt_AddressToWorkingMen.txt 
 1857 Scenes_of_Clerical_Life ../eliot-texts/scenes.txt
 Feb_1859 Adam_Bede ../eliot-texts/adambede.txt
 July_1859 The_Lifted_Veil ../eliot-texts/liftedveil.txt
